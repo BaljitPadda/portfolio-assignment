@@ -1,0 +1,149 @@
+* {
+  font-family: "Gill Sans", sans-serif;
+}
+
+/* HEADER SECTION */
+
+.container {
+  display: grid;
+  grid-template-columns: 135px 1fr 270px;
+  height: 65vh;
+
+  background-color: rgb(42, 173, 173);
+  border-top: 8px solid rgba(40, 40, 88, 0.856);
+}
+
+.left {
+  padding: 10px;
+  color: white;
+  justify-content: left;
+  font-size: large;
+}
+
+.middle {
+  color: white;
+  padding: 150px;
+}
+
+.middle h1 {
+  font-size: xx-large;
+}
+
+.right nav ul {
+  padding: 15px;
+  justify-content: right;
+  color: white;
+
+  display: grid;
+  grid-template-columns: 80px 80px 85px;
+  grid-gap: 25px;
+}
+
+.right ul {
+  list-style: none;
+}
+
+.right .about_me_nav {
+  color: teal;
+  background-color: rgba(255, 255, 255, 0.932);
+  padding: 4px;
+
+  border: white solid 1px;
+  border-radius: 5px;
+}
+
+.right .portfolio_nav {
+  color: teal;
+  background-color: rgba(255, 255, 255, 0.932);
+  padding: 4px;
+
+  border: white solid 1px;
+  border-radius: 5px;
+}
+
+.right .experience_nav {
+  color: teal;
+  background-color: rgba(255, 255, 255, 0.932);
+  padding: 4px;
+
+  border: white solid 1px;
+  border-radius: 5px;
+}
+
+/* MAIN SECTION */
+
+/* ABOUT ME SECTION */
+
+.about-me {
+  border-top: rgba(40, 40, 88, 0.856) solid 8px;
+}
+
+.about-me h2 {
+  text-transform: uppercase;
+}
+
+/* PORTFOLIO SECTION */
+
+.portfolio {
+  background-color: pink;
+  border-top: rgba(40, 40, 88, 0.856) solid 8px;
+
+  display: grid;
+  grid-template:
+    "h2 h2 h2"
+    "left-card middle-card right-card";
+  grid-gap: 20px;
+}
+
+.portfolio h2 {
+  grid-area: h2;
+  text-transform: uppercase;
+}
+
+.left-card {
+  grid-area: left-card;
+  border: rgb(206, 10, 92) solid 8px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.middle-card {
+  grid-area: middle-card;
+  border: rgb(206, 10, 92) solid 8px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.right-card {
+  grid-area: right-card;
+  border: rgb(206, 10, 92) solid 8px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.portfolio h2 {
+  text-align: center;
+}
+
+.experience {
+  border-top: rgba(40, 40, 88, 0.856) solid 8px;
+}
+
+.experience h2 {
+  text-transform: uppercase;
+}
+
+footer {
+  color: white;
+  background-color: rgba(40, 40, 88, 0.856);
+  padding: 15px;
+}
